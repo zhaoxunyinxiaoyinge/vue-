@@ -1,0 +1,26 @@
+body, html
+      line-height 1
+      font-weight 200
+      font-size 12px
+//这里是移动端的一个比值：物理像素/设备独立像素，（iphone6为2）
+@media (-webkit-min-device-pixel-ratio:1.5),(min-device-pixel-ratio:1.5)
+   //这里的是类名，必需要添加到使用的元素上去;
+  .border-1px,.border-top-1px
+      &::after
+        //这里主要是对y抽缩放的倍数;
+        -webkit-transform :scaleY(0.7)
+        transform :scaleY(0.7)
+@media (-webkit-min-device-pixel-ratio:2),(min-device-pixel-ratio:2)
+  .border-1px,.border-top-1px
+    &::after
+      -webkit-transform :scaleY(0.5)
+      transform :scaleY(0.5)
+.clearfix
+  display: inline-block
+  &:after
+    content: ''
+    height 0
+    visibility hidden
+    display: block
+    overflow: hidden
+    clear both
