@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # selle
 
 > sell app
@@ -19,3 +20,6 @@ npm run build --report
 ```
 
 For a detailed explanation on how things work, check out the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).
+=======
+# vue-
+>>>>>>> 7d0f91a4b17841471cecb9660f8cc79e5fb3b095
